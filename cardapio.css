@@ -54,3 +54,31 @@ nav img {
   border-radius: 100px;
   transform: scale(1.1);
 }
+.grupo-cardapio{
+  text-align: center;
+  width: 100%;
+  border: 1px solid white;
+}
+.contem-grid{
+  width: 100%;
+  display: flex;
+  padding: 20px;
+}
+.card{
+  margin: 10px;
+  padding: 5px;
+  background-color: transparent;
+  color: white;
+}
+.card h5{
+  font-family: 'Fredoka';
+}
+.card p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}

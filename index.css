@@ -138,3 +138,9 @@ nav img {
     transform: translateX(-50%);
   }
 }
+footer{
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
