@@ -21,23 +21,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
   </head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar-custom">
-      <div class="logo">
-        <a href="index.html">
-          <img src="Roxito/Artes/logoroxito.jpg" alt="Logo Roxito Açaí" />
-          <span class="visually-hidden">Roxito Açaí</span>
-        </a>
-      </div>
-      <div class="links">
-        <a href="index.html" title="Página Inicial">Página Inicial</a>
-        <a href="formu.html" title="Entre em contato">Entre em contato</a>
-        <a href="cardapio.html" title="Cardápio">Cardápio</a>
-      </div>
-    </nav>
+    
 
     
       <form class="row g-3 needs-validation" novalidate>
@@ -51,7 +41,11 @@
   </div>
   <div class="col-md-4">
     <label for="validationCustom03" class="form-label">Cidade</label>
-    <input type="text" class="form-control" name="cidade" id="validationCustom03" required>
+    <input type="text" class="form-control" name="cidade" id="validationCustom03" placeholder="Digite sua cidade" required>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">Telefone</label>
+    <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
   </div>
   <div class="col-md-4">
     <label for="validationCustom04" class="form-label">Sugestão</label>
@@ -109,6 +103,7 @@
 </div>
 
     <script>
+      /*validação de formularios*/
       (() => {
   'use strict';
 
@@ -135,6 +130,10 @@
   });
 })();
 
+/* Mascaras */
+$(document).ready(function() {
+      $('#telefone').mask('(99) 99999-9999');
+    });
 
     </script>
   </body>

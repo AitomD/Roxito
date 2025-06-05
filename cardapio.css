@@ -82,3 +82,39 @@ footer{
   justify-content: center;
   width: 100%;
 }
+
+/* responsivo nav */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .links.active {
+    display: flex;
+  }
+
+  .links a {
+    padding: 12px;
+    margin: 5px 0;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+}
