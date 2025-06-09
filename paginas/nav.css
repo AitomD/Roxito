@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+body{
+    background-color: rgb(44, 24, 58);
+  background: linear-gradient(135deg, #5b136d, #574c07);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Em nav.css */
+.navbar-custom {
+    /* Seus estilos para a barra de navegação principal */
+    background-color: transparent;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-custom .logo img {
+    width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.navbar-custom .links {
+    display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.navbar-custom .links a {
+    display: inline-block;
+  padding: 10px 15px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-family: 'Fredoka', sans-serif;
+  font-size: larger;
+  margin: 15px;
+}
+
+.navbar-custom .links a:hover {
+    border-radius: 100px;
+  transform: scale(1.1);
+}
