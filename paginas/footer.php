@@ -1,7 +1,6 @@
 <footer>
-      <div class="imgfoot">
+      <div class="fixed-bottom imgfoot m-auto">
         <div class="textfooter">
-          <h4>Acesse nossas redes sociais</h4>
         </div>
         <a
           href="https://www.instagram.com/roxitoacaiburguer/"
