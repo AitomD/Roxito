@@ -1,34 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
-body{
-    background-color: 	#1E2A38;
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-}
-/* NAVBAR */
-.navbar{
+  body{
+      background: linear-gradient(gray,black);
+  }
+
+  /* NAVBAR */
+  .navbar{
+      font-family: "Poppins";
+      box-shadow: 0px 4px 15px white;
+  }
+  .nav-link{
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: lightgray;
+    margin: 15px;
+    padding: 8px;
+  }
+  .nav-link:hover{
+    transition: all 0.5s;
+    transform: scale(1.1);
+  }
+  /* DIV CONTAINER  */
+  .container{
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-family: "Poppins";
+    background-color: gray;
+
+  }
+  .container img{
+    margin: 40px;
+    border: 3px solid black;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  .container img:hover{
+    transform: scale(0.98);
+    border-radius: 28px;
+  }
+  .form-label{
+    color: white;
     font-family: "Montserrat";
-    box-shadow: 0px 4px 15px white;
-}
-.nav-link{
-  font-size: 16px;
-  border-radius: 20px;
-  background-color: lightgray;
-  margin: 15px;
-  padding: 8px;
-}
-.nav-link:hover{
-  transition: all 0.5s;
-  transform: scale(1.1);
-}
-
-
-
-footer{
-  text-align: center;
-  display: grid;
-  justify-content: center;
-  width: 100%;
-  font-family: "Montserrat";
-  color: white;
-  position: absolute;
-}
+    font-size: 18px;
+    margin: 10px;
+  }
+  .banner{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  footer{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-family: "Montserrat";
+    color: white;
+    position: relative;
+  }

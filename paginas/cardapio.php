@@ -13,16 +13,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="card.css">
 </head>
 <body>
     <?php 
         include 'nav.php';
     ?>
-
-
-
-
-
+    <div style="height: 50px;"></div>
 
 
     <?php
