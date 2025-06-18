@@ -1,5 +1,99 @@
-.banner{
-    justify-content: center;
-    text-align: center;
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@112.5,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.container-carrosel{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 30px;
+  background-color: transparent;
+}
+.container-carrosel h1{
+  text-align: center;
+  color: white;
+  font-family: 'Fredoka', sans-serif;
+}
+/* Rolagem do carrossel */
+.roll-carrossel {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+  background-color: transparent;
+}
+.roll-carrossel img{
+  width: 20vw;
+  max-width: 500px;
+  height: 500px;
+  object-fit: cover;
+  margin-right: 20px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.roll-carrossel img:hover{
+  transition: 0.5s ease;
+  transform: scale(1.05);
+  border-radius: 70px;
+}
+/* Fontes estilizadas de cada legenda */
+.roll-carrossel figcaption{
+  font-family: 'Fredoka',sans-serif;
+  color: white;
+  text-align: center;
+  font-size: xx-large;
+}
+/* Div de contenção dos lanches */
+.container-lanche{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 30px;
+  background-color: transparent;
+}
+.container-lanche h1{
+  text-align: center;
+  color: white;
+  font-family: 'Fredoka',sans-serif;
+}
+.roll-lanche {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+  background-color: transparent;
+}
+.roll-lanche img{
+  width: 20vw;
+  max-width: 500px;
+  height: 500px;
+  object-fit: cover;
+  margin-right: 20px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.roll-lanche img:hover{
+  transition: 0.5s ease;
+  transform: scale(1.05);
+  border-radius: 70px;
+}
+/* Animação */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.cardapios{
+  background-color: transparent;
+}
+.cardapios h2{
+  font-family: 'Fredoka',sans-serif;
+  color: white;
+}
+.tabela-stl th{
+  font-family: 'Playfair Display';
+  font-size: 20px;
+}
+.tabela-stl td{
+  font-family: 'Montserrat';
+  font-size: 19px;
+}

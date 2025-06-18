@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg bg-transparent">
   <div class="container-fluid">
     <a class="navbar-brand fs-2 p-2" href="index.php">Roxito
 </a>

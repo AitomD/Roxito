@@ -1,5 +1,6 @@
 <footer>
-      <div class="fixed-bottom imgfoot m-auto">
+  
+      <div class="imgfoot">
         <div class="textfooter">
         </div>
         <a
@@ -19,4 +20,5 @@
           Donatoni
         </h6>
       </div>
+      
     </footer>

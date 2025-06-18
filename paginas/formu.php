@@ -14,6 +14,7 @@
     />
     <script src="../js/jquery-3.7.1.js"></script>
     <script src="../js/jquery.mask.min.js"></script>
+    <link rel="icon" href="../artes/cadastre-se.png">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -92,10 +93,7 @@
   Formulário enviado com sucesso!
 </div>
 
-
-
-
-
+<div style="height: 50px;"></div>
 
     <?php
         include 'footer.php';
