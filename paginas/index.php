@@ -28,7 +28,8 @@
 
  <div class="container-carrosel">
       <h1>Venha experimentar nossa linha de gelados!</h1>
-      <div style="height: 25px;"></div>
+
+      <div style="height: 30px;"></div>
 
       <div class="roll-carrossel">
         <figure>
@@ -37,11 +38,11 @@
         </figure>
         <figure>
           <img src="../Tudo/acai-morango-2.jpeg" alt="Açaí com Morango" />
-          <figcaption>Açai Com Morango</figcaption>
+          <figcaption>Morangos</figcaption>
         </figure>
         <figure>
           <img src="../Tudo/acai-pistache.jpeg" alt="Açaí com Pistache" />
-          <figcaption>Açai com Pistache</figcaption>
+          <figcaption>Pistache</figcaption>
         </figure>
         <figure>
           <img src="../Tudo/acai-varias-frutas.jpeg" alt="Açaí Frutado" />
@@ -64,34 +65,7 @@
         </figure>
 
         <!-- Lanches -->
-        <figure>
-          <img src="../Tudo/lanche-aberto.jpeg" alt="Lanche Aberto" />
-          <figcaption>Lanches ENORMES</figcaption>
-        </figure>
-        <figure>
-          <img src="../Tudo/lanche-bacon.jpeg" alt="Lanche bacon" />
-          <figcaption>Lanches com MUITO Bancon</figcaption>
-        </figure>
-        <figure>
-          <img src="../Tudo/lanche-bancada.jpeg" alt="Lanche Tábua" />
-          <figcaption>Sempre servidos em Tábuas personalizadas</figcaption>
-        </figure>
-        <figure>
-          <img src="../Tudo/lanche-grande.jpeg" alt="Lanche Grande" />
-          <figcaption>Vários lanches DELICIOSOS!</figcaption>
-        </figure>
-        <figure>
-          <img src="../Tudo/lanche-menores.jpeg" alt="Lanche Menor" />
-          <figcaption>Lanche menores,mas o mesmo sabor de sempre!</figcaption>
-        </figure>
-        <figure>
-          <img src="../Tudo/lanche-normal.jpeg" alt="Lanche normal" />
-          <figcaption>Sinta essa suculencia</figcaption>
-        </figure>
-        <figure>
-          <img src="../Tudo/lanche-perto.jpeg" alt="Lanche Proximo" />
-          <figcaption>Deu água na boca ai?</figcaption>
-        </figure>
+        
 
         <!-- Imagens duplicadas para efeito contínuo -->
         <figure>
@@ -132,7 +106,9 @@
 
     <div class="container-lanche">
       <h1>Experimente também nossos lanches</h1>
+
       <div style="height: 25px;"></div>
+      
       <div class="roll-lanche">
         <img src="../Tudo/lanche-aberto.jpeg" alt="Lanche aberto" />
         <img src="../Tudo/lanche-bacon.jpeg" alt="Lanche Bacon" />

@@ -1,99 +1,171 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@112.5,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-.container-carrosel{
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400..700&display=swap');
+
+/* === Container Carrossel Açaís === */
+.container-carrosel {
   width: 100%;
-  overflow: hidden;
-  position: relative;
   padding: 30px;
   background-color: transparent;
+  overflow-x: hidden;
 }
-.container-carrosel h1{
+.container-carrosel h1 {
   text-align: center;
   color: white;
   font-family: 'Fredoka', sans-serif;
+  font-size: 2rem;
 }
-/* Rolagem do carrossel */
+
+/* === Carrossel com Scroll === */
 .roll-carrossel {
   display: flex;
-  white-space: nowrap;
-  animation: scroll 10s linear infinite;
-  background-color: transparent;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding-bottom: 15px;
 }
-.roll-carrossel img{
-  width: 20vw;
-  max-width: 500px;
-  height: 500px;
+.roll-carrossel figure {
+  flex: 0 0 auto;
+  width: 250px;
+  margin: 0;
+  text-align: center;
+}
+.roll-carrossel img {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
   object-fit: cover;
-  margin-right: 20px;
-  flex-shrink: 0;
   border-radius: 40px;
+  transition: transform 0.5s ease;
 }
-.roll-carrossel img:hover{
-  transition: 0.5s ease;
-  transform: scale(1.05);
-  border-radius: 70px;
+.roll-carrossel img:hover {
+  transition: all 0.4s;
+  transform: scale(1.07);
 }
-/* Fontes estilizadas de cada legenda */
-.roll-carrossel figcaption{
-  font-family: 'Fredoka',sans-serif;
+.roll-carrossel figcaption {
+  font-family: 'Fredoka', sans-serif;
   color: white;
   text-align: center;
-  font-size: xx-large;
+  font-size: 1.3rem;
+  margin-top: 8px;
 }
-/* Div de contenção dos lanches */
-.container-lanche{
+
+/* === Container Carrossel Lanches === */
+.container-lanche {
   width: 100%;
-  overflow: hidden;
-  position: relative;
   padding: 30px;
   background-color: transparent;
+  overflow-x: hidden;
 }
-.container-lanche h1{
+.container-lanche h1 {
   text-align: center;
   color: white;
-  font-family: 'Fredoka',sans-serif;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2rem;
 }
+
+/* === Carrossel de Lanches === */
 .roll-lanche {
   display: flex;
-  white-space: nowrap;
-  animation: scroll 10s linear infinite;
-  background-color: transparent;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding-bottom: 15px;
 }
-.roll-lanche img{
-  width: 20vw;
-  max-width: 500px;
-  height: 500px;
+.roll-lanche img {
+  width: 250px;
+  height: auto;
+  max-height: 300px;
   object-fit: cover;
-  margin-right: 20px;
-  flex-shrink: 0;
   border-radius: 40px;
+  transition: transform 0.5s ease;
 }
-.roll-lanche img:hover{
-  transition: 0.5s ease;
-  transform: scale(1.05);
-  border-radius: 70px;
+.roll-lanche img:hover {
+  transition: all 0.4s;
+  transform: scale(1.07);
 }
-/* Animação */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-.cardapios{
+
+/* === Tabelas === */
+.cardapios {
   background-color: transparent;
+  box-shadow: 0px 0px 50px black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.cardapios h2{
-  font-family: 'Fredoka',sans-serif;
+.cardapios h2 {
+  font-family: 'Fredoka', sans-serif;
   color: white;
 }
-.tabela-stl th{
-  font-family: 'Playfair Display';
-  font-size: 20px;
+
+.tabela-stl th {
+  padding: 15px;
+  box-shadow: 0px 0px 10px black;
+  border-width: 3px;
+  border-color: black;
+  color: white;
+  background-color: gray;
+  font-family: 'Lora', serif;
+  font-size: 21px;
+  transition: all 0.4s;
 }
-.tabela-stl td{
-  font-family: 'Montserrat';
+.tabela-stl th:hover {
+  transform: scale(1.02);
+  color: black;
+  background-color: lightgray;
+}
+.tabela-stl td {
+  box-shadow: 0px 0px 10px black;
+  border-width: 3px;
+  border-color: black;
+  color: white;
+  background-color: gray;
+  font-family: 'Montserrat', sans-serif;
   font-size: 19px;
+}
+
+/* === Itens selecionados === */
+.item-pedido.selecionado {
+  color: green !important;
+  font-weight: bold;
+}
+
+/* === Scrollbar*/
+.roll-carrossel::-webkit-scrollbar,
+.roll-lanche::-webkit-scrollbar {
+  height: 8px;
+}
+.roll-carrossel::-webkit-scrollbar-thumb,
+.roll-lanche::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+.roll-carrossel::-webkit-scrollbar-track,
+.roll-lanche::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .roll-carrossel figure,
+  .roll-lanche img {
+    width: 180px;
+  }
+  .container-carrosel h1,
+  .container-lanche h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .roll-carrossel figure,
+  .roll-lanche img {
+    width: 140px;
+  }
+  .container-carrosel h1,
+  .container-lanche h1 {
+    font-size: 1.2rem;
+  }
 }
