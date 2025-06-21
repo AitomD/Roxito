@@ -19,6 +19,8 @@
           Todos os direitos autorais reservados - Desenvolvido por Aitom
           Donatoni
         </h6>
+        <div style="height: 10px;"></div>
+
       </div>
       
     </footer>

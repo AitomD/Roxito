@@ -26,6 +26,7 @@
     ?>
 <div style="height: 45px;"></div>
 
+  
  <div class="container-carrosel">
       <h1>Venha experimentar nossa linha de gelados!</h1>
 
@@ -128,7 +129,9 @@
         <img src="../Tudo/lanche-perto.jpeg" alt="Lanche Aproximado" />
       </div>
     </div>
+<div style="height: 50px;"></div>
 
+    <h3 class="text-center text-light lead fs-4">Atendemos das 14:30 as 22:30 de terça a domingo!</h3>
 <div class="background">
   <div class="particle"></div>
   <div class="particle"></div>
