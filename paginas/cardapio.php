@@ -22,6 +22,15 @@
 <body>
     <?php include 'nav.php'; ?>
 
+    <div class="instr mx-auto">
+        <h3 class="text-center text-light">Como faço meu pedido?</h3>
+        <p class="lead text-center text-light fs-4">Para fazer seu pedido,clique sobre o nome do lanche em seguida digite a quantidade.Role ao fim da pagina copie o texto e clique no botão
+            do whatssap,cole a mensagem e faça o pedido
+        </p>
+    </div>
+
+    <div style="height: 25px;"></div>
+    
     <!-- Lanches Especiais -->
     <div class="cardapios container my-4">
         <h2 class="text-center">Lanches Especiais</h2>

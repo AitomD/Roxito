@@ -99,38 +99,29 @@
         include 'footer.php';
     ?>
     <script>
-    (() => {
-  'use strict';
+  (() => {
+    'use strict';
 
-  const forms = document.querySelectorAll('.needs-validation');
-
-  Array.from(forms).forEach(form => {
-    // Seleciona a div da mensagem já existente no HTML
+    const form = document.querySelector('.needs-validation');
     const mensagemSucesso = document.querySelector('#mensagemSucesso');
 
     form.addEventListener('submit', event => {
       if (!form.checkValidity()) {
         event.preventDefault();
         event.stopPropagation();
-        mensagemSucesso.style.display = 'none'; // Esconde a mensagem se o form for inválido
+        mensagemSucesso.style.display = 'none';
       } else {
-        event.preventDefault(); // Impede envio real
-        mensagemSucesso.style.display = 'block'; // Mostra a mensagem
-        form.classList.remove('was-validated'); // Remove classes de validação para resetar estilo
-        form.reset(); // Limpa o formulário
       }
-
       form.classList.add('was-validated');
-    }, false);
-  });
-})();
-
-/* Mascaras */
-$(document).ready(function() {
-      $('#telefone').mask('(99) 99999-9999');
     });
+  })();
 
-    </script>
+  /* Máscaras */
+  $(document).ready(function() {
+    $('#telefone').mask('(99) 99999-9999');
+  });
+</script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
