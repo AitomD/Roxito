@@ -1,0 +1,144 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+  body{
+    background-color: rgb(44, 24, 58);
+    background: linear-gradient(135deg, #6b1880, #270d3b);
+    overflow-x: hidden;
+  
+  }
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgb(241, 229, 239);
+  border-radius: 50%;
+  animation: floatUp 10s linear infinite;
+}
+
+.particle:nth-child(1) {
+  left: 10%;
+  animation-duration: 12s;
+  animation-delay: 0s;
+}
+
+.particle:nth-child(2) {
+  left: 30%;
+  animation-duration: 14s;
+  animation-delay: 2s;
+}
+
+.particle:nth-child(3) {
+  left: 50%;
+  animation-duration: 10s;
+  animation-delay: 4s;
+}
+
+.particle:nth-child(4) {
+  left: 70%;
+  animation-duration: 16s;
+  animation-delay: 1s;
+}
+
+.particle:nth-child(5) {
+  left: 90%;
+  animation-duration: 11s;
+  animation-delay: 3s;
+}
+
+@keyframes floatUp {
+  0% {
+    top: 100%;
+    transform: translateX(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    top: -10%;
+    transform: translateX(20px);
+    opacity: 0;
+  }
+}
+
+  /* NAVBAR */
+  .navbar{
+      font-family: "Poppins";
+  }
+  .nav-link{
+    font-size: 25px;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 8px;
+    color: white;
+  }
+  .nav-link:hover{
+    transition: all 0.5s;
+    transform: scale(1.1);
+  }
+  /* DIV CONTAINER  */
+  .container{
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-family: "Poppins";
+    background-color: gray;
+
+  }
+  .container img{
+    margin: 40px;
+    border: 3px solid black;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  .container img:hover{
+    transform: scale(0.98);
+    border-radius: 28px;
+  }
+  .form-label{
+    color: white;
+    font-family: "Montserrat";
+    font-size: 18px;
+    margin: 10px;
+  }
+  .banner{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .main-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - (var(--navbar-height) + var(--footer-height))); /* Ajuste conforme a altura real da sua navbar e footer */
+    }
+    .display-1 {
+        font-weight: 700;
+    }
+  footer{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-family: "Montserrat";
+    color: white;
+    position: relative;
+  }
